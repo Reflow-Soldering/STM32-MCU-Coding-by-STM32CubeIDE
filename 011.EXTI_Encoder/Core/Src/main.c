@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -105,6 +105,8 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
+  int preEncoderCnt = 0;
+  uint8_t Complete_Sig = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -113,6 +115,12 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
+	  if((preEncoderCnt != gEnCoderCnt))
+	  {
+		  preEncoderCnt=gEnCoderCnt;
+		  printf("%d\n",preEncoderCnt);
+
+	  }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -247,14 +255,14 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		gEnCoderCnt = 0;
 		break;
 
-	case A_SIG_Pin :
+	case GPIO_PIN_12 :
 		if(!HAL_GPIO_ReadPin(B_SIG_GPIO_Port, B_SIG_Pin))
 		{
 			gEnCoderCnt++;
 		}
 		break;
 
-	case B_SIG_Pin :
+	case GPIO_PIN_15 :
 		if(!HAL_GPIO_ReadPin(A_SIG_GPIO_Port, A_SIG_Pin))
 		{
 			gEnCoderCnt--;

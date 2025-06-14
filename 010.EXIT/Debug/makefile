@@ -60,8 +60,8 @@ all: main-build
 main-build: 010.EXIT.elf secondary-outputs
 
 # Tool invocations
-010.EXIT.elf 010.EXIT.map: $(OBJS) $(USER_OBJS) C:\repo\STM32CubeIDE\010.EXIT\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "010.EXIT.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\repo\STM32CubeIDE\010.EXIT\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="010.EXIT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+010.EXIT.elf 010.EXIT.map: $(OBJS) $(USER_OBJS) H:\udemy\STM32-MCU-Coding-by-STM32CubeIDE\010.EXIT\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "010.EXIT.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"H:\udemy\STM32-MCU-Coding-by-STM32CubeIDE\010.EXIT\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="010.EXIT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

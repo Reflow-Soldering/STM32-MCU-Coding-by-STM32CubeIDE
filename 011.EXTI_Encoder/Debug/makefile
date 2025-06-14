@@ -60,8 +60,8 @@ all: main-build
 main-build: 011.EXTI_Encoder.elf secondary-outputs
 
 # Tool invocations
-011.EXTI_Encoder.elf 011.EXTI_Encoder.map: $(OBJS) $(USER_OBJS) C:\repo\STM32CubeIDE\011.EXTI_Encoder\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "011.EXTI_Encoder.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\repo\STM32CubeIDE\011.EXTI_Encoder\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="011.EXTI_Encoder.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+011.EXTI_Encoder.elf 011.EXTI_Encoder.map: $(OBJS) $(USER_OBJS) H:\udemy\STM32-MCU-Coding-by-STM32CubeIDE\011.EXTI_Encoder\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "011.EXTI_Encoder.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"H:\udemy\STM32-MCU-Coding-by-STM32CubeIDE\011.EXTI_Encoder\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="011.EXTI_Encoder.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
