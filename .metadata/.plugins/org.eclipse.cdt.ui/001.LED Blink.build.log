@@ -1,0 +1,10 @@
+17:02:12 **** Build of configuration Debug for project 001.LED Blink ****
+make -j16 all 
+arm-none-eabi-size  001.LED\ Blink.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7856	     12	   1644	   9512	   2528	001.LED Blink.elf
+Finished building: default.size.stdout
+ 
+
+17:02:12 Build Finished. 0 errors, 0 warnings. (took 521ms)
+

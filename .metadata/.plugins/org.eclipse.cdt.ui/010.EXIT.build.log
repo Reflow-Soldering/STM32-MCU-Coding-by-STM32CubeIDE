@@ -1,0 +1,10 @@
+16:53:51 **** Incremental Build of configuration Debug for project 010.EXIT ****
+make -j16 all 
+arm-none-eabi-size  010.EXIT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8160	     12	   1644	   9816	   2658	010.EXIT.elf
+Finished building: default.size.stdout
+ 
+
+16:53:52 Build Finished. 0 errors, 0 warnings. (took 200ms)
+

@@ -1,0 +1,10 @@
+17:02:14 **** Build of configuration Debug for project 007.USART_rb ****
+make -j16 all 
+arm-none-eabi-size  007.USART_rb.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13524	    104	   1992	  15620	   3d04	007.USART_rb.elf
+Finished building: default.size.stdout
+ 
+
+17:02:14 Build Finished. 0 errors, 0 warnings. (took 200ms)
+

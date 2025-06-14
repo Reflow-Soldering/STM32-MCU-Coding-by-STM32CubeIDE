@@ -1,0 +1,10 @@
+17:02:12 **** Build of configuration Debug for project 002.USART_Printf ****
+make -j16 all 
+arm-none-eabi-size  002.USART_Printf.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11164	    104	   1976	  13244	   33bc	002.USART_Printf.elf
+Finished building: default.size.stdout
+ 
+
+17:02:13 Build Finished. 0 errors, 0 warnings. (took 213ms)
+

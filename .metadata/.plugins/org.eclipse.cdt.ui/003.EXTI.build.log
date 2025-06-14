@@ -1,0 +1,10 @@
+17:02:13 **** Build of configuration Debug for project 003.EXTI ****
+make -j16 all 
+arm-none-eabi-size  003.EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7972	     12	   1644	   9628	   259c	003.EXTI.elf
+Finished building: default.size.stdout
+ 
+
+17:02:13 Build Finished. 0 errors, 0 warnings. (took 199ms)
+

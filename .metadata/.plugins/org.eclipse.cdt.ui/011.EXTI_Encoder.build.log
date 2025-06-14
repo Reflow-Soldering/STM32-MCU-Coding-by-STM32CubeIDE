@@ -1,0 +1,10 @@
+17:34:57 **** Incremental Build of configuration Debug for project 011.EXTI_Encoder ****
+make -j16 all 
+arm-none-eabi-size  011.EXTI_Encoder.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7860	     12	   1644	   9516	   252c	011.EXTI_Encoder.elf
+Finished building: default.size.stdout
+ 
+
+17:34:57 Build Finished. 0 errors, 0 warnings. (took 202ms)
+
