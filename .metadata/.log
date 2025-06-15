@@ -1,3 +1,45 @@
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-06-15 09:41:40.383
 !MESSAGE Indexed '013.ADC_Interrupt' (19 sources, 81 headers) in 1.53 sec: 4,280 declarations; 17,961 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+!SESSION 2025-06-15 15:57:27.610 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-15 15:57:35.889
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-15 15:57:35.890
+!MESSAGE Log4j2 initialized with config file H:\udemy\STM32-MCU-Coding-by-STM32CubeIDE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-15 15:57:56.819
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-15 15:59:48.063
+!MESSAGE Indexed '014.ADC_DMA_Sequencer' (19 sources, 81 headers) in 2.26 sec: 4,280 declarations; 17,961 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-06-15 16:39:38.450
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-06-15 16:39:38.451
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-06-15 16:39:38.452
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-06-15 16:39:38.452
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-06-15 16:57:11.561
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 7 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-06-15 16:57:11.562
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-06-15 16:57:11.563
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 7 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-06-15 16:57:11.563
+!MESSAGE Existing sessions are:
