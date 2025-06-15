@@ -1,4 +1,4 @@
-20:58:40 **** Incremental Build of configuration Debug for project 011.EXTI_Encoder ****
+09:36:13 **** Incremental Build of configuration Debug for project 011.EXTI_Encoder ****
 make -j12 all 
 arm-none-eabi-size  011.EXTI_Encoder.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  011.EXTI_Encoder.elf
 Finished building: default.size.stdout
  
 
-20:58:41 Build Finished. 0 errors, 0 warnings. (took 329ms)
+09:36:14 Build Finished. 0 errors, 0 warnings. (took 341ms)
 
