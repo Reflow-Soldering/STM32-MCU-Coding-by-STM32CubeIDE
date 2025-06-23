@@ -43,3 +43,42 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-06-15 16:57:11.563
 !MESSAGE Existing sessions are:
+!SESSION 2025-06-19 19:39:59.795 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-19 19:40:08.240
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-19 19:40:08.241
+!MESSAGE Log4j2 initialized with config file H:\udemy\STM32-MCU-Coding-by-STM32CubeIDE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-19 19:40:19.852
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-19 19:43:05.785
+!MESSAGE Indexed '015.TIM_Buzzer' (19 sources, 81 headers) in 1.95 sec: 4,280 declarations; 17,961 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+!SESSION 2025-06-22 05:48:50.948 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-22 05:49:10.940
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-22 05:49:10.953
+!MESSAGE Log4j2 initialized with config file H:\udemy\STM32-MCU-Coding-by-STM32CubeIDE\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-22 05:49:23.270
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-22 05:51:56.201
+!MESSAGE Indexed '016.TIM_Servo' (20 sources, 82 headers) in 2.68 sec: 4,767 declarations; 22,721 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0073%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-22 07:01:11.382
+!MESSAGE Indexed '017.TIM_RGBLED' (19 sources, 81 headers) in 1.21 sec: 4,280 declarations; 17,961 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)

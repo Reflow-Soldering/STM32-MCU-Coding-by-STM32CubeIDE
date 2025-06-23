@@ -1,10 +1,17 @@
-17:01:30 **** Incremental Build of configuration Debug for project 014.ADC_DMA_Sequencer ****
+19:40:35 **** Incremental Build of configuration Debug for project 014.ADC_DMA_Sequencer ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "014.ADC_DMA_Sequencer.elf" @"objects.list"   -mcpu=cortex-m4 -T"H:\udemy\STM32-MCU-Coding-by-STM32CubeIDE\014.ADC_DMA_Sequencer\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="014.ADC_DMA_Sequencer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 014.ADC_DMA_Sequencer.elf
+ 
 arm-none-eabi-size  014.ADC_DMA_Sequencer.elf 
+arm-none-eabi-objdump -h -S 014.ADC_DMA_Sequencer.elf  > "014.ADC_DMA_Sequencer.list"
    text	   data	    bss	    dec	    hex	filename
   16920	    104	   2152	  19176	   4ae8	014.ADC_DMA_Sequencer.elf
 Finished building: default.size.stdout
  
+Finished building: 014.ADC_DMA_Sequencer.list
+ 
 
-17:01:31 Build Finished. 0 errors, 0 warnings. (took 333ms)
+19:40:38 Build Finished. 0 errors, 0 warnings. (took 2s.713ms)
 

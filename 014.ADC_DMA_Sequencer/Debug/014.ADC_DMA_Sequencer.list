@@ -504,11 +504,11 @@ int main(void)
  80005fc:	f000 f890 	bl	8000720 <MX_ADC1_Init>
   MX_USART2_UART_Init();
  8000600:	f000 f8fe 	bl	8000800 <MX_USART2_UART_Init>
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  //DMA circular일때는 continuous DMA request도 필수로 enable 할 것
   if(HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&uwADCxConvertedValue, 3) != HAL_OK)
  8000604:	2203      	movs	r2, #3
  8000606:	490e      	ldr	r1, [pc, #56]	@ (8000640 <main+0x58>)
