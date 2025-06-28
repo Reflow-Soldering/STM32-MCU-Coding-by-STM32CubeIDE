@@ -1,0 +1,5 @@
+hdc1080.c:31:1:hdc1080_read_reg.part.0	32	static
+hdc1080.c:31:1:hdc1080_read_reg	0	static
+hdc1080.c:77:1:hdc1080_write_reg	24	static
+hdc1080.c:140:1:hdc1080_init	40	static
+hdc1080.c:171:1:hdc1080_measure	48	static

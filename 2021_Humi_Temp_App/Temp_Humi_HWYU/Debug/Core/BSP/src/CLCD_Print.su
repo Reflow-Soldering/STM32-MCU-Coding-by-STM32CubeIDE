@@ -1,0 +1,4 @@
+CLCD_Print.c:14:6:CLCD_Init_1602	0	static
+CLCD_Print.c:19:6:CLCD_Print_First	8	static
+CLCD_Print.c:24:6:CLCD_Print_Humi_Temp	16	static
+CLCD_Print.c:36:6:CLCD_Print_Vol_Cds	16	static
