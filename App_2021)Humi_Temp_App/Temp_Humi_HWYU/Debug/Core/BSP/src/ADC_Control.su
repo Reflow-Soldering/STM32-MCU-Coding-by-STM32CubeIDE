@@ -1,3 +1,0 @@
-ADC_Control.c:5:6:ADC_Control_Init	8	static
-ADC_Control.c:17:6:ADC_Volume_Control	16	static
-ADC_Control.c:33:6:ADC_Cds_Control	16	static

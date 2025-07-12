@@ -18,3 +18,8 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:014.ADC_DMA_Sequencer/activeLau
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:015.TIM_Buzzer/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:015.TIM_Buzzer/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:016.TIM_Servo\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:017.TIM_RGBLED\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:017.TIM_RGBLED\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:018.I2C_HDC_1080\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Temp_Humi_HWYU\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Temp_Humi_HWYU\ Debug/activeLaunchTarget=null\:---

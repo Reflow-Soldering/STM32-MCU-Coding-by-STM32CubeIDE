@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (9-2020-q2-update)
+# Toolchain: GNU Tools for STM32 (13.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -15,7 +15,6 @@ RM := rm -rf
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include Core/BSP/src/subdir.mk
--include subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -47,14 +46,14 @@ BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ART
 EXECUTABLES += \
 Temp_Humi_HWYU.elf \
 
+MAP_FILES += \
+Temp_Humi_HWYU.map \
+
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
 Temp_Humi_HWYU.list \
-
-OBJCOPY_BIN += \
-Temp_Humi_HWYU.bin \
 
 
 # All Target
@@ -64,8 +63,8 @@ all: main-build
 main-build: Temp_Humi_HWYU.elf secondary-outputs
 
 # Tool invocations
-Temp_Humi_HWYU.elf: $(OBJS) $(USER_OBJS) F:\CubeIDE\Temp_Humi_HWYU\STM32F103RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Temp_Humi_HWYU.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"F:\CubeIDE\Temp_Humi_HWYU\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Temp_Humi_HWYU.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Temp_Humi_HWYU.elf Temp_Humi_HWYU.map: $(OBJS) $(USER_OBJS) H:\udemy\STM32-MCU-Coding-by-STM32CubeIDE\App_2021)Humi_Temp_App\Temp_Humi_HWYU\STM32F103RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Temp_Humi_HWYU.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"H:\udemy\STM32-MCU-Coding-by-STM32CubeIDE\App_2021)Humi_Temp_App\Temp_Humi_HWYU\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Temp_Humi_HWYU.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -79,17 +78,12 @@ Temp_Humi_HWYU.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Temp_Humi_HWYU.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "Temp_Humi_HWYU.bin"
-	@echo 'Finished building: $@'
-	@echo ' '
-
 # Other Targets
 clean:
-	-$(RM) $(SIZE_OUTPUT)$(OBJDUMP_LIST)$(EXECUTABLES)$(OBJS)$(S_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(OBJCOPY_BIN) Temp_Humi_HWYU.elf
+	-$(RM) Temp_Humi_HWYU.elf Temp_Humi_HWYU.list Temp_Humi_HWYU.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'
@@ -98,6 +92,6 @@ fail-specified-linker-script-missing:
 warn-no-linker-script-specified:
 	@echo 'Warning: No linker script specified. Check the linker settings in the build configuration.'
 
-.PHONY: all clean dependents fail-specified-linker-script-missing warn-no-linker-script-specified
+.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified
 
 -include ../makefile.targets
