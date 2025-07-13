@@ -1,0 +1,10 @@
+12:07:47 **** Incremental Build of configuration Debug for project 000.Extra_Touch Interrupt ****
+make -j12 all 
+arm-none-eabi-size  000.Extra_Touch\ Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6076	     12	   1572	   7660	   1dec	000.Extra_Touch Interrupt.elf
+Finished building: default.size.stdout
+ 
+
+12:07:47 Build Finished. 0 errors, 0 warnings. (took 327ms)
+
