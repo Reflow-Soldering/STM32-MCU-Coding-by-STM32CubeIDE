@@ -210,8 +210,17 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	if(GPIO_Pin == GPIO_PIN_9)
 	{
-		//회로가 토글모드이므로 양쪽 에지 모두 사용으로 처리
-		EXTI_Flag = 1;
+
+		if(EXTI_Cnt < 3)
+		{
+			EXTI_Cnt++;
+		}
+		else
+		{
+			EXTI_Flag = 1;
+			EXTI_Cnt = 0;
+		}
+
 
 	}
 
