@@ -1,0 +1,2 @@
+../Drivers/BSP/NUCLEOEVB/at24c/at24c.c:4:19:AT24C_Write	56	static
+../Drivers/BSP/NUCLEOEVB/at24c/at24c.c:43:1:AT24C_Read	48	static
